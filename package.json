@@ -1,16 +1,22 @@
 {
-  "name": "node_mysql_sequelize",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "nodejs",
-    "sequelize",
-    "mysql"
-  ],
-  "author": "ibsanju",
-  "license": "MIT"
+    "name": "node_mysql_sequelize",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nodejs",
+        "sequelize",
+        "mysql"
+    ],
+    "author": "ibsanju",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "^2.18.1"
+    }
 }
