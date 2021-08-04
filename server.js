@@ -13,3 +13,11 @@ db.connect(err => {
 })
 
 app.listen(3001, () => console.log("server is running...!"))
+
+
+/* 
+* Commands:
+npm i express mysql sequelize sequelize-cli
+sequelize init
+
+*/
