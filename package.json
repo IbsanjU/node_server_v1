@@ -17,7 +17,9 @@
     "license": "MIT",
     "dependencies": {
         "express": "^4.17.1",
-        "mysql": "^2.18.1",
+        "fs": "0.0.1-security",
+        "mysql2": "^2.2.5",
+        "path": "^0.12.7",
         "sequelize": "^6.6.5",
         "sequelize-cli": "^6.2.0"
     }

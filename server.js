@@ -3,21 +3,15 @@ const app = express()
 
 const config = require("./config")
 
-const mysql = require("mysql")
+const db = require("./models")
 
-const db = mysql.createConnection(config)
-
-db.connect(err => {
-    if (err) throw err
-    console.log("db is connected...!")
+db.sequelize.sync().then((req) => {
+    app.listen(3001, () => console.log("server is running...!"))
 })
-
-app.listen(3001, () => console.log("server is running...!"))
-
 
 /* 
 * Commands:
-npm i express mysql sequelize sequelize-cli
+npm i express mysql2 sequelize sequelize-cli
 sequelize init
-
+npm i path fs
 */
