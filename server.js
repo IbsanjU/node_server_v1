@@ -13,7 +13,6 @@ app.get('/select', (req, res) => {
     .catch((err) => {
       if (err) res.send(err)
     })
-  res.send('select')
 })
 
 app.get('/insert', (req, res) => {
@@ -24,6 +23,39 @@ app.get('/insert', (req, res) => {
     if (err) res.send('err : ' + err)
     res.send(result)
   })
+})
+
+app.get('/update', async (req, res) => {
+  const id = 1
+  const { firstName, age } = { firstName: 'Bharath Kumar R', age: 26 }
+
+  const user = await User.findOne({
+    where: { id: id },
+  })
+
+  if (!user) {
+    return res.status(400).send({
+      message: `No user found with the id ${id}`,
+    })
+  }
+
+  try {
+    if (firstName) {
+      user.firstName = firstName
+    }
+    if (age) {
+      user.age = age
+    }
+
+    user.save()
+    return res.send({
+      message: `User ${id} has been updated!`,
+    })
+  } catch (err) {
+    return res.status(500).send({
+      message: `Error: ${err.message}`,
+    })
+  }
 })
 
 app.get('/delete', (req, res) => {
