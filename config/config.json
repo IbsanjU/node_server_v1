@@ -1,23 +1,23 @@
 {
-    "development": {
-        "username": "fWgg8cZTCp",
-        "password": "tH50BFAiGe",
-        "database": "fWgg8cZTCp",
-        "host": "remotemysql.com",
-        "dialect": "mysql"
-    },
-    "test": {
-        "username": "fWgg8cZTCp",
-        "password": "tH50BFAiGe",
-        "database": "fWgg8cZTCp",
-        "host": "remotemysql.com",
-        "dialect": "mysql"
-    },
-    "production": {
-        "username": "fWgg8cZTCp",
-        "password": "tH50BFAiGe",
-        "database": "fWgg8cZTCp",
-        "host": "remotemysql.com",
-        "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "myfakedb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "myfakedb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "myfakedb",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
 }

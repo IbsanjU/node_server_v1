@@ -19,10 +19,10 @@ app.get('/select', (req, res) => {
 app.get('/insert', (req, res) => {
   User.create({
     firstName: 'Bharath',
-    aga: 26,
-  }).then((err, res) => {
+    age: 26,
+  }).catch((err, result) => {
     if (err) res.send('err : ' + err)
-    res.send(err)
+    res.send(result)
   })
 })
 
