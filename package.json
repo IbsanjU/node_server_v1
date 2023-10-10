@@ -16,7 +16,7 @@
     "author": "ibsanju",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "fs": "0.0.1-security",
         "mysql2": "^2.2.5",
         "path": "^0.12.7",
